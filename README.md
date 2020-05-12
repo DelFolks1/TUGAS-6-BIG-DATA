@@ -48,7 +48,7 @@ Terakhir, kita menggunakan node Entropy Scorer untuk menghitung entropi dari pre
 Hasil dari Entropy Scorer :
 <img src="/docbd6/entropy.jpg"><br>
 <h3>Deployment </h3>
-<img src="/docbd6/Deployment.jpg"><br>
+<img src="/docbd6/deployment.jpg"><br>
 Kita menggunakan Container Input (JSON) untuk memasukkan dataset iris<br>
 Lalu, kita menggunakan node JSON To Table untuk mengubah JSON kedalam bentuk table multi kolom <br>
 Setelah itu, kita menambahkan node Compiled Model Predictor untuk membuat prediction. <br>
