@@ -80,4 +80,7 @@ Lalu, tambahkan noded RPop MLP Learner untuk membuat trained neutral network <br
 Keduanya lalu disambungkan ke node PMML To Cell untuk mengubah PMML port menjadi cell PMML <br>
  
 <h3>Modelling</h3><br>
-<img src="/docbd6/modelling2.jpg">
+<img src="/docbd6/modelling2.jpg"><br>
+Kedua node PMML To Cell tadi kita gabungkan dengan menggunakan Concatenate<br>
+Lalu, kita tambahkan node Table To PMML Ensemble untuk menggabungkan table PMML menjadi satu dokumen PMML dengan model mining <br>
+Kemudian menambahkan node PMML Compiler untuk menerjemahkan model PMML ke Java yang nantinya akan dijalankan oleh node Spark Compiled Model Predictor <br>
