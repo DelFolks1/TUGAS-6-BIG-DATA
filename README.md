@@ -93,3 +93,9 @@ Tambahkan node Table To Spark untuk memindahkan KNIME table ke Data Frame Spark<
 Gunakan node Spark Compiled Model Predictor untuk membuat prediction<br>
 Setelah itu, tambahkan node Spark to Table untuk memindahkan data dari data frame spark ke table<br>
 Menambahkan node Scorer untuk melakukan penghitungan confusion matrix dari prediction yang telah dibuat<br>
+
+<h3> Deployment</h3>
+<img src="/docbd6/deployment2.jpg"><br>
+Di dalam work flow ini tidak ada deployment, sehingga kita bisa mendeploy confusion matrix ke ke dalam format CSV dengan menggunakan node CSV Writer
+Hasil CSV:
+<img src="/docbd6/hasildeployment.jpg"><br>
