@@ -75,5 +75,8 @@ Data set ini memiliki 3 kelas dan memiliki  5 kolom :<br>
 <h3>Data Preparation</h3>
 <img src="/docbd6/dataprep2.jpg">
 Pertama, baca data dengan menggunakan Filer reader <br>
+Lalu, tambahkan node Decision Tree Learner untuk membuat decision tree<br>
+Lalu, tambahkan noded RPop MLP Learner untuk membuat trained neutral network <br>
+Keduanya lalu disambungkan ke node PMML To Cell untuk mengubah PMML port menjadi cell PMML <br>
  
 <h3>Modelling</h3><br>
