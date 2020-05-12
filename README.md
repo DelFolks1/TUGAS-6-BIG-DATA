@@ -80,3 +80,4 @@ Lalu, tambahkan noded RPop MLP Learner untuk membuat trained neutral network <br
 Keduanya lalu disambungkan ke node PMML To Cell untuk mengubah PMML port menjadi cell PMML <br>
  
 <h3>Modelling</h3><br>
+<img src="/docbd6/modelling2.jpg">
