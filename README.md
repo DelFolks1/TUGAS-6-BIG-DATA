@@ -56,3 +56,24 @@ Tambahkan lagi node Table to JSON untuk mengubah table ke dalam bentuk table<br>
 Terakhir, tambahkan node Container Output (JSON)  untuk memperlihatkan cluster dari Iris dataset dalam JSON output<br> 
 Hasil Output JSON :
 <img src="/docbd6/outputjson.jpg"><br>
+<br>
+<h2>Spark Compiled Model Predictor</h2>
+
+<h3>Business Understanding</h3>
+Proses yang dapat dilakukan pada dataset :<br>
+- Menentukan klasifikasi dari spesies bunga<br>
+- Digunakan dalam data mining dan machine learning<br>
+<h3>Data Understanding</h3>
+<img src="/docbd6/dataset1.jpg">
+Dilihat dari kolom dan data-data yang digunakan pada dataset ini, kita bisa melihat bahwa dataset yang digunakan adalah Iris Flower Dataset. <br>
+Data set ini memiliki 3 kelas dan memiliki  5 kolom :<br>
+- sepal_length <br>
+- sepal_width<br>
+- petal_length<br>
+- petal_width<br>
+- species<br>
+<h3>Data Preparation</h3>
+<img src="/docbd6/dataprep2.jpg">
+Pertama, baca data dengan menggunakan Filer reader <br>
+ 
+<h3>Modelling</h3><br>
