@@ -1,1 +1,49 @@
-# TUGAS-6-BIG-DATA
+<h1> Tugas 6 Big Data </h1> 
+Nama : Raja Permata Boy <br>
+NRP : 05111740000070 <br>
+<h1> Spark Compiled Model Using KNIME </h1>
+<h2>MLlib model to PMML</h2>
+<h3>Business Understanding</h3>
+Proses yang dapat dilakukan pada dataset :<br>
+- Menentukan klasifikasi dari spesies bunga<br>
+- Digunakan dalam data mining dan machine learning<br>
+<h3>Data Understanding</h3>
+<img src="/docbd6/dataset1.jpg">
+Dilihat dari kolom dan data-data yang digunakan pada dataset ini, kita bisa melihat bahwa dataset yang digunakan adalah Iris Flower Dataset. <br>
+Data set ini memiliki 3 kelas dan memiliki  5 kolom :<br>
+- sepal_length <br>
+- sepal_width<br>
+- petal_length<br>
+- petal_width<br>
+- species<br>
+<h3>Data Preparation</h3>
+<img src="/docbd6/dataprep.jpg">
+Buat spark context local dengan Create Local Big Data Environment<br>
+Lalu, dataset dibaca dengan menggunakan File Reader <br>
+Untuk memasukkan tabel KNIME ke dataframe digunakan Table to Spark<br>
+Berikut konfigurasi untuk tiap node : <br>
+Konfigurasi Create Local Big Data Environment <br>
+<img src="/docbd6/createbd.jpg"><br>
+Konfigurasi node File reader <br>
+<img src="/docbd6/filereader.jpg"><br>
+Konfigurasi Table To Spark <br>
+<img src="/docbd6/tabletospark.jpg"><br>
+<h3>Modelling</h3><br>
+<img src="/docbd6/modelling.jpg"><br>
+Model ditrain di Spark dengan menggunakan Spark k-Means<br>
+Lalu, model diubah ke PMML dengan menggunakan node Spark MLlib to PPML<br>
+Terakhir, PMML diubah ke java dengan menggunakan node PMML compiler<br>
+Berikut konfigurasi dari tiap node :<br>
+Spark k-Means :<br>
+<img src="/docbd6/kmeans.jpg"><br>
+MLlib To PMML<br>
+<img src="/docbd6/mllibtopmml.jpg"><br>
+PMML Compiler :<br><br>
+<img src="/docbd6/pmmlcomp.jpg"><br>
+<h3>Evaluation </h3>
+<img src="/docbd6/evaluation.jpg"><br>
+Pertama, dataset dibaca dengan menggunakan node File Reader 
+Selanjutnya, kita menggunakan node Compiled Model Predictor untuk membuat prediction
+Terakhir, kita menggunakan node Entropy Scorer untuk menghitung entropi dari prediction yang ada
+<h3>Deployment </h3>
+<img src="/docbd6/Deployment.jpg"><br>
