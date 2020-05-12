@@ -79,8 +79,17 @@ Lalu, tambahkan node Decision Tree Learner untuk membuat decision tree<br>
 Lalu, tambahkan noded RPop MLP Learner untuk membuat trained neutral network <br>
 Keduanya lalu disambungkan ke node PMML To Cell untuk mengubah PMML port menjadi cell PMML <br>
  
-<h3>Modelling</h3><br>
+<h3>Modelling</h3>
 <img src="/docbd6/modelling2.jpg"><br>
 Kedua node PMML To Cell tadi kita gabungkan dengan menggunakan Concatenate<br>
 Lalu, kita tambahkan node Table To PMML Ensemble untuk menggabungkan table PMML menjadi satu dokumen PMML dengan model mining <br>
 Kemudian menambahkan node PMML Compiler untuk menerjemahkan model PMML ke Java yang nantinya akan dijalankan oleh node Spark Compiled Model Predictor <br>
+
+<h3> Evaluation</h3>
+<img src="/docbd6/evaluation2.jpg"><br>
+Data dibaca dengan menggunakan node File Reader <br>
+Lalu buat spark context local dengan node Create Local Big Data Environment<br>
+Tambahkan node Table To Spark untuk memindahkan KNIME table ke Data Frame Spark<br>
+Gunakan node Spark Compiled Model Predictor untuk membuat prediction<br>
+Setelah itu, tambahkan node Spark to Table untuk memindahkan data dari data frame spark ke table<br>
+Menambahkan node Scorer untuk melakukan penghitungan confusion matrix dari prediction yang telah dibuat<br>
